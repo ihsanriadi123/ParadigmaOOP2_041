@@ -32,15 +32,21 @@ public:
     }
 };
 
-class jakwan : public pekerja, public pelajar {
+class budi : public pekerja, public pelajar {
 public:
 
-    jakwan(int pUmur) :
+    budi(int pUmur) :
         pekerja(pUmur),
         pelajar(pUmur),
         orang(pUmur)
     {
-        cout << "Jakwan dibuat\n" << endl;
+        cout << "budi dibuat\n" << endl;
     }
 };
 
+int main()
+{
+    budi a(12);
+
+    return 0;
+}
